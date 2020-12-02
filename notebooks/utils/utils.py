@@ -164,10 +164,10 @@ def timeseries_and_history_comparison(casename, output_roots):
             # (Assume those years were already checked prior to deleting history files)
             if comp_test == "no history":
                 print(
-                    f"Skipping stream {stream} for year {year:04} because there are no history files"
+                    f"Skipping year {year:04} because there are no history files in stream {stream}"
                 )
                 has_hist = False
-                continue
+                break
 
             found_all = found_all and (comp_test == "same")
 
