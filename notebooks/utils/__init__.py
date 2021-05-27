@@ -15,3 +15,4 @@ from .utils import (
     timeseries_and_history_comparison,
     generate_plot_catalog,
 )
+from .plot_suite_maps import plot_suite_maps
